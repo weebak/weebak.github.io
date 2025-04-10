@@ -27,7 +27,7 @@ header {
 .logo {
     width: 292px; /* Adjust based on your image size */
     height: auto;
-    margin-right: 20px;
+    padding-right: 50px;
 }
 
 .slogan {
@@ -326,7 +326,7 @@ footer sup {
 
     .logo {
         margin-bottom: 1px;
-        margin-right: 0;
+        padding-right: 40;
         width: 270px; /* Smaller logo */
     }
 
@@ -353,12 +353,13 @@ footer sup {
 
     .logo {
         margin-bottom: 1px;
-        margin-right: 0;
+        padding-right: 30;
         width: 225px; /* Smaller logo */
     }
 
     .slogan {
         font-size: 3.5em;
+        white-space: nowrap; /* Prevents the slogan from wrapping */
     }
 }
 
@@ -370,12 +371,13 @@ footer sup {
 
     .logo {
         margin-bottom: 1px;
-        margin-right: 0;
+        padding-right: 20;
         width: 200px; /* Smaller logo */
     }
 
     .slogan {
         font-size: 3.0em;
+        white-space: nowrap; /* Prevents the slogan from wrapping */
     }
 }
 
@@ -387,12 +389,13 @@ footer sup {
 
     .logo {
         margin-bottom: 1px;
-        margin-right: 0;
+        padding-right: 10;
         width: 150px; /* Smaller logo */
     }
 
     .slogan {
         font-size: 2.3em;
+        white-space: nowrap; /* Prevents the slogan from wrapping */
     }
 }
 
@@ -402,11 +405,13 @@ footer sup {
         text-align: center;
     }
     .logo {
-        width: 115px; /* Even smaller logo for phones */
+        width: 125px; /* Even smaller logo for phones */
+        padding-right: 0;
     }
 
     .slogan {
         font-size: 1.9em;
+        white-space: nowrap; /* Prevents the slogan from wrapping */
     }
     .responsive-image {
         max-width: 380px;
@@ -417,5 +422,14 @@ footer sup {
     }
     .product-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 414px) {
+    .logo {
+        width: 115px; /* Even smaller logo for phones */
+    .slogan {
+        font-size: 1.7em; /* Adjust for common iPhone widths like 414px */
+        white-space: normal; /* Allow wrapping, will break at <wbr> */
     }
 }
