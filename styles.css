@@ -423,6 +423,9 @@ footer sup {
     .product-grid {
         grid-template-columns: 1fr;
     }
+    .product-description {
+        font-size: 1.3em; /* bigger for better readability */
+    }
 }
 
 @media (max-width: 414px) {
