@@ -34,8 +34,8 @@
     </script>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&family=Ephesis" rel="stylesheet"> -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:;">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&family=Ephesis" rel="stylesheet">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; script-src 'self' https://www.googletagmanager.com https://*.cloudflare.com; connect-src 'self' https://www.google-analytics.com;">
 </head>
 <body>
 <!-- In <body> before </body> -->
@@ -155,29 +155,6 @@ As an Amazon Associate, we earn a small commission on qualifying purchases made 
         <section class="contact">
             <h2>Contact Us</h2>
             <p>We’d love to hear from you! Whether you have questions, feedback, or just want to say hello, feel free to reach out to us at <a href="mailto:contact@weebak.com" class="contact-link">contact@weebak.com</a> — your thoughts help us create even smarter solutions for everyday living.</p>
-    <form action="mailto:contact@weebak.com" method="post" enctype="text/plain" class="contact-form">
-        <div class="form-group">
-    <h2><i>How can we help?</i></h2>
-            <input type="email" id="email" name="email" placeholder="Email" aria-label="Email" required>
-        </div>
-        <div class="form-group form-row">
-            <div>
-                <input type="text" id="first-name" name="first-name" placeholder="First name" aria-label="First name">
-            </div>
-            <div>
-                <input type="text" id="last-name" name="last-name" placeholder="Last name" aria-label="Last name">
-            </div>
-        </div>
-        <!-- Honeypot field (hidden) -->
-        <div class="form-group honeypot">
-            <label for="middle-initial">Middle initial</label>
-            <input type="text" id="middle-initial" name="middle-initial">
-        </div>
-        <div class="form-group">
-            <textarea id="message" name="message" rows="4" placeholder="Message" aria-label="Message" required></textarea>
-        </div>
-        <button type="submit" class="send-button">Send</button>
-    </form>
 </section>
 
     </main>
